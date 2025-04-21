@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="LIC Policy Enquiry Form for customers to request information about insurance plans.">
+<meta name="author" content="Your Name">
+<meta name="keywords" content="insurance, life cover, term plan, LIC agent, policy advisor">
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="favicon.png">
+<title>LIC Policy Enquiry</title>
+</head>
+<body>
+<header>
+<div class="top-bar">
+<h1>Policy Advisor Portal</h1>
+</div>
+</header>
+
+<main>
+<div class="container">
+<h2>LIC Policy Enquiry</h2>
+<form name="lic-policy-form" method="POST" data-netlify="true">
+<!-- Hidden input for Netlify to identify form -->
+<input type="hidden" name="form-name" value="lic-policy-form" />
+
+<label for="name">Full Name</label>
+<input type="text" name="name" id="name" required />
+
+<label for="email">Email Address</label>
+<input type="email" name="email" id="email" required />
+
+<label for="phone">Contact Number</label>
+<input type="tel" name="phone" id="phone" required />
+
+<label for="policy">Interested Policy</label>
+<select name="policy" id="policy" required>
+<option value="">-- Select a Policy --</option>
+<option value="Jeevan Labh">Jeevan Labh</option>
+<option value="Tech Term Plan">Tech Term Plan</option>
+<option value="Jeevan Umang">Jeevan Umang</option>
+<option value="Child Plan">Children’s Plan</option>
+<option value="Pension Plan">Pension Plan</option>
+<option value="Other">Other / Not Sure</option>
+</select>
+
+<button type="submit" id="submitBtn">Submit Enquiry</button>
+</form>
+</div>
+</main>
+
+<footer>
+<div class="footer">
+Powered by Policy Advisor | Response within 24 hours
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
